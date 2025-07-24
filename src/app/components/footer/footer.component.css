@@ -1,0 +1,11 @@
+.footer {
+  background: var(--dark);
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+.footer .socials a {
+  color: #fff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}

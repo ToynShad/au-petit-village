@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--yellow);
+  color: var(--dark);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo {
+  font-family: 'Bubbleboddy Neue', cursive;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+}
+nav a.active {
+  border-bottom: 2px solid var(--red);
+}

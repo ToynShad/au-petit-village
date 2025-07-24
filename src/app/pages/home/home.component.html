@@ -1,0 +1,25 @@
+<section class="filters">
+  <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    placeholder="Rechercher par nom…"
+    aria-label="Rechercher par nom"
+  />
+
+  <select [(ngModel)]="sortOrder" (change)="onSortChange(sortOrder)" aria-label="Trier par prix">
+    <option value="asc">Prix croissant</option>
+    <option value="desc">Prix décroissant</option>
+  </select>
+</section>
+
+<section class="grid">
+  <article
+    class="card"
+    *ngFor="let product of products | filterByName:searchTerm | sortByPrice:sortOrder"
+  >
+    <img [src]="product.image" alt="{{ product.name }}">
+    <h3>{{ product.name }}</h3>
+    <p class="price">{{ product.price | currency:'EUR':'symbol':'1.2-2' }}</p>
+    <a [routerLink]="['/product', product.id]" class="btn">Voir le détail</a>
+  </article>
+</section>

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Obélix portant un menhir",
+    "price": 35.5,
+    "description": "Figurine peinte à la main",
+    "image": "assets/images/obelix.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Astérix en colère",
+    "price": 29.99,
+    "description": "Figurine peinte à la main",
+    "image": "assets/images/asterix.png"
+  }
+]

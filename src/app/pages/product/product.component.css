@@ -1,0 +1,26 @@
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.product img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.price {
+  color: var(--red);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.back {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: var(--dark);
+}
+@media (max-width: 768px) {
+  .product {
+    grid-template-columns: 1fr;
+  }
+}

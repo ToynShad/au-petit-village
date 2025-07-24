@@ -1,0 +1,16 @@
+<ng-container *ngIf="product; else notFound">
+  <div class="product">
+    <img [src]="product.image" [alt]="product.name" />
+    <div class="info">
+      <h1>{{ product.name }}</h1>
+      <p class="price">{{ product.price | currency:'EUR' }}</p>
+      <p class="desc">{{ product.description }}</p>
+      <a routerLink="/" class="back">← Retour à l’accueil</a>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #notFound>
+  <p>Produit introuvable.</p>
+  <a routerLink="/" class="back">← Retour à l’accueil</a>
+</ng-template>
